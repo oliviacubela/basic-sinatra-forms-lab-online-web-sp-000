@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
 
   get '/newteam' do
-    erb :newteam       #APP GET/newteam renders basketball team form (DO NOT TOUCH THIS!!)
+    erb :team       #APP GET/newteam renders basketball team form (DO NOT TOUCH THIS!!)
   end
 
   post '/newteam' do
