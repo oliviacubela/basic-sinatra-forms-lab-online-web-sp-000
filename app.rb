@@ -21,7 +21,7 @@ class App < Sinatra::Base
     @pf = params[:pf]
     @sf = params[:sf]
     @c = params[:c]
-    erb :newteam
+    erb :team
   end
 
   post '/team' do
