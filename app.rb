@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :newteam       #APP GET/newteam renders basketball team form (DO NOT TOUCH THIS!!)
   end
 
-  post '/team' do #newteam
+  post '/newteam' do 
     # puts "Team Name: #{params[:name]}"
     # puts "Coach: #{params[:coach]}"
     # puts "Point Guard: #{params[:pg]}"
@@ -24,18 +24,18 @@ class App < Sinatra::Base
     erb :team
   end
 
-  # post '/team' do
-  #
-  #   @name = params[:name]
-  #   @coach = params[:coach]
-  #   @pg = params[:pg]
-  #   @sg = params[:sg]
-  #   @pf = params[:pf]
-  #   @sf = params[:sf]
-  #   @c = params[:c]
-  #
-  #   erb :team
-  # end
+  post '/team' do
+
+    @name = params[:name]
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @sg = params[:sg]
+    @pf = params[:pf]
+    @sf = params[:sf]
+    @c = params[:c]
+
+    erb :team
+  end
   # get '/team' do
   #
   #   erb :team
